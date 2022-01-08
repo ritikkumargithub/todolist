@@ -109,7 +109,7 @@ ol li{
 @media (max-width: 912px){
     .center_div{
         width: 75%;
-        height: 70vh;
+        height: 50vh;
     }
     .todo_style .material-icons {
         margin: 0 15px 0 15px;
