@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main_div{
+    width: 100%;
+    height: 100vh;
+    background: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.center_div{
+    width: 25%;
+    height: 80vh;
+    background-color: cornsilk;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: auto;
+}
+h1{
+    color: white;
+    background: transparent;
+    background-color: blueviolet;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+input{
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+}
+button{
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+ol{
+    margin-top: 30px;
+}
+ol li{
+    padding-left: 25px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgb(120, 4, 228);
+    text-transform: capitalize;
+    border-bottom: 1px solid gray;
+}
+.todo_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.todo_style .material-icons{
+    width: 22px;
+    height: 22px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    color: cornsilk;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+.todo_style .material-icons:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
+.todo_style .material-icons:hover .list_style{
+    color: crimson;
+}
+
+/* responsive code */
+@media (max-width: 912px){
+    .center_div{
+        width: 75%;
+        height: 70vh;
+    }
+    .todo_style .material-icons {
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: #fff;
+        font-size: 30px;
+    }
+}
