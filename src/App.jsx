@@ -33,7 +33,7 @@ const deleteItems = (id) => {
             <br/>
             <h1>ToDo List</h1>
             <br/>
-            <input type="text" placeholder='Add a Items' value={inputList} onChange={itemEvent} />
+            <input type="text" placeholder='Add Items' value={inputList} onChange={itemEvent} />
             <button onClick={listOfitem} > + </button>
         
             <ol>
